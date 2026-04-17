@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Taryn Bronson">
+    <meta name="description" content="Learn about the FIFA World Cup.">
+    <title>The Greatest Game - Fan Club</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/Soccerball.png" alt="Site Logo">
+        <span>The Greatest Game</span>
+        <p>To the Game</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">FIFA World Cup</a></li>
+            <li><a href="winners.html">Winners</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="club.html">Join Fan Club</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img src="images/hero-image.png" alt="Club Banner Image" class="hero">
+
+        <h1>
+            Join Our FIFA Fan Club
+        </h1>
+
+        <form action="thanks.html" method="GET">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label>
+                    Full Name
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Phone Number
+                    <input type="tel" name="phone">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                    <label>Favorite Team</label>
+                    <label>
+                        <input type="radio" name="fav-team" value="Germany">
+                        Germany
+                    </label>
+                    <label>
+                        <input type="radio" name="fav-team" value="Argentina">
+                        Argentina
+                    </label>
+                    <label>
+                        <input type="radio" name="fav-team" value="France">
+                        France
+                    </label>
+                    <label>
+                        <input type="radio" name="fav-team" value="England">
+                        England
+                    </label>
+                <label>
+                    Meetup Location
+                    <select>
+                        <option value="Salt Lake">Salt Lake</option>
+                        <option value="Mexico City">Mexico City</option>
+                        <option value="Alanta">Alanta</option>
+                        <option value="Vancouver">Vancouver</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Info</legend>
+                <label>
+                    Comments
+                    <textarea></textarea>
+                </label>
+                <label>
+                    <input type="checkbox" required>
+                    Agree to Terms and Conditions
+                </label>
+                <label>
+                    <input type="checkbox" name="rules" required>
+                    Agree to Club Rules
+                </label>
+                <label>
+                    <input type="checkbox" name="weeklyemails">
+                    I Want Weekly Emails
+                </label>
+            </fieldset>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 &bull; Taryn Bronson &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
